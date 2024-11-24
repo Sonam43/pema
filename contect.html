@@ -1,0 +1,386 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .cont-container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #1E3A8A; /* Blue color */
+        }
+        .cont-contact-section {
+            margin-bottom: 20px;
+        }
+        .cont-contact-section h2 {
+            color: #1E3A8A; /* Blue color */
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .cont-contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .cont-contact-item i {
+            margin-right: 10px;
+            color: #1E3A8A; /* Blue color */
+        }
+        .cont-contact-item p {
+            margin: 0;
+            color: #555;
+        }
+        .cont-contact-item a {
+            color: #1E3A8A; /* Blue color */
+            text-decoration: none;
+        }
+        .cont-contact-item a:hover {
+            text-decoration: underline;
+        }
+        .cont-write-to-us {
+            margin-top: 40px;
+        }
+        .cont-write-to-us h2 {
+            color: #1E3A8A; /* Blue color */
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .cont-write-to-us form {
+            display: flex;
+            flex-direction: column;
+        }
+        .cont-write-to-us form input,
+        .cont-write-to-us form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .cont-write-to-us form button {
+            padding: 10px;
+            background-color: black; /* Blue color */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .cont-write-to-us form button:hover {
+            background-color: rgb(51, 51, 51); /* Darker blue color */
+        }
+    </style>
+</head>
+<body>
+    <header id="header" style="background-image: url('image/coctect.jpg');">
+        <div class="navbar" id="navbar">
+            <img alt="Logo of Sherubtse College" height="50" src="image/Sherubtse College.png" width="40" style="margin-left: 30px;"/>
+            <h3 style="color: white; margin-left: -10px; font-weight: bold;">Sherubtse College</h3>
+            <a href="index.html" style="margin-left: 80px;">Home</a>
+            <div class="dropdown">
+                <a href="#">About Us</a>
+                <div class="dropdown-content">
+                    <a href="timeline.html">Timeline</a>
+                    <a href="faculty.html">Faculty Profile</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Academic</a>
+                <div class="dropdown-content">
+                    <a href="admission.html">Admission</a>
+                    <div class="sub-dropdown">
+                        <a href="#">Programmes<i class="fas fa-caret-right"></i></a>
+                        <div class="sub-dropdown-content">
+                            <a href="DSDApro.html">Data Science And Data Analytics</a>
+                            <a href="EPSpro.html">Economics and Political Science</a>
+                            <a href="DCPM.html">Digital Communication and Project Management</a>
+                            <a href="lifescience.html">Life Science</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="research.html">Research</a>
+                <div class="dropdown-content">
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Student Services</a>
+                <div class="dropdown-content">
+                    <a href="https://sites.google.com/view/sherubtselibrary">Library</a>
+                    <a href="games_and_sports.html">Games and Sports</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Announcement</a>
+                <div class="dropdown-content">
+                    <a href="Events.html">News</a>
+                    <a href="Events.html">Events</a>
+                    <a href="vacancy_announcement.html">Vacancy &amp; Announcement</a>
+                </div>
+            </div>
+            <a href="contect.html">Contact</a>
+            <a class="search-icon" href="#"><i class="fas fa-search"></i></a>
+            <span class="menu-icon" onclick="toggleMenu()">☰</span>
+        </div>
+        <div class="responsive-menu" id="responsiveMenu">
+            <span class="close-icon" onclick="toggleMenu()">&times;</span>
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="#">About Us</a>
+                <div class="dropdown-content">
+                    <a href="timeline.html">Timeline</a>
+                    <a href="faculty.html">Faculty Profile</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Academic</a>
+                <div class="dropdown-content">
+                    <a href="admission.html">Admission</a>
+                    <div class="sub-dropdown">
+                        <a href="#">Programmes<i class="fas fa-caret-right"></i></a>
+                        <div class="sub-dropdown-content">
+                            <a href="DSDApro.html">Data Science And Data Analytics</a>
+                            <a href="EPSpro.html">Economics and Political Science</a>
+                            <a href="DCPM.html">Digital Communication and Project Management</a>
+                            <a href="lifescience.html">Life Science</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="research.html">Research</a>
+                <div class="dropdown-content">
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Student Services</a>
+                <div class="dropdown-content">
+                    <a href="https://sites.google.com/view/sherubtselibrary">Library</a>
+                    <a href="games_and_sports.html">Games and Sports</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Announcement</a>
+                <div class="dropdown-content">
+                    <a href="Events.html">News</a>
+                    <a href="Events.html">Events</a>
+                    <a href="vacancy_announcement.html">Vacancy &amp; Announcement</a>
+                </div>
+            </div>
+            <a href="contect.html">Contact</a>
+        </div>
+    </header>
+    <div class="cont-container">
+        <h1>Contact Us</h1>
+        
+        <div class="cont-contact-section" onclick="toggleSection(this)">
+            <h2>President <i class="fas fa-chevron-down"></i></h2>
+            <div class="cont-contact-details">
+                <div class="cont-contact-item">
+                    <i class="fas fa-user"></i>
+                    <p>Mr. Tshering Wangdi</p>
+                </div>
+                <div class="cont-contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p><a href="mailto:president.sherubtse@rub.edu.bt">president.sherubtse@rub.edu.bt</a></p>
+                </div>
+                <div class="cont-contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>Phone: 975-04-535100</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cont-contact-section" onclick="toggleSection(this)">
+            <h2>Academic Affairs <i class="fas fa-chevron-down"></i></h2>
+            <div class="cont-contact-details">
+                <div class="cont-contact-item">
+                    <i class="fas fa-user"></i>
+                    <p>Mr. Sonam Dendup</p>
+                </div>
+                <div class="cont-contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p><a href="mailto:daa.sherubtse@rub.edu.bt">daa.sherubtse@rub.edu.bt</a></p>
+                </div>
+                <div class="cont-contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>Phone: 975-04-535143</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cont-contact-section" onclick="toggleSection(this)">
+            <h2>Student Affairs <i class="fas fa-chevron-down"></i></h2>
+            <div class="cont-contact-details">
+                <div class="cont-contact-item">
+                    <i class="fas fa-user"></i>
+                    <p>Mr. Thinley Namgyel</p>
+                </div>
+                <div class="cont-contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p><a href="mailto:dsa.sherubtse@rub.edu.bt">dsa.sherubtse@rub.edu.bt</a></p>
+                </div>
+                <div class="cont-contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>Phone: 975-04-535171</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cont-contact-section" onclick="toggleSection(this)">
+            <h2>Research & Industrial Linkages <i class="fas fa-chevron-down"></i></h2>
+            <div class="cont-contact-details">
+                <div class="cont-contact-item">
+                    <i class="fas fa-user"></i>
+                    <p>Dr. Yezer</p>
+                </div>
+                <div class="cont-contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p><a href="mailto:dril.sherubtse@rub.edu.bt">dril.sherubtse@rub.edu.bt</a></p>
+                </div>
+                <div class="cont-contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>Phone: 957-04-535171</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cont-contact-section" onclick="toggleSection(this)">
+            <h2>Administration <i class="fas fa-chevron-down"></i></h2>
+            <div class="cont-contact-details">
+                <div class="cont-contact-item">
+                    <i class="fas fa-user"></i>
+                    <p>Mr. Yeshey Penjor</p>
+                </div>
+                <div class="cont-contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p><a href="mailto:yeshey.sherubtse@rub.edu.bt">yeshey.sherubtse@rub.edu.bt</a></p>
+                </div>
+                <div class="cont-contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>Phone: +975-04-535208</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cont-contact-section" onclick="toggleSection(this)">
+            <h2>Webmaster <i class="fas fa-chevron-down"></i></h2>
+            <div class="cont-contact-details">
+                <div class="cont-contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p><a href="mailto:ict.sherubtse@rub.edu.bt">ict.sherubtse@rub.edu.bt</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cont-contact-section" onclick="toggleSection(this)">
+            <h2>Exam Records <i class="fas fa-chevron-down"></i></h2>
+            <div class="cont-contact-details">
+                <div class="cont-contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p><a href="mailto:records.sherubtse@rub.edu.bt">records.sherubtse@rub.edu.bt</a></p>
+                </div>
+                <div class="cont-contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>Phone: +975-04-535341</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cont-container cont-write-to-us">
+        <h2>Write to Us</h2>
+        <form id="cont-contactForm">
+            <input type="text" id="cont-name" name="name" placeholder="Your Name" required>
+            <input type="email" id="cont-email" name="email" placeholder="Your Email" required>
+            <textarea id="cont-message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <script>
+        function toggleSection(section) {
+            const details = section.querySelector('.cont-contact-details');
+            const icon = section.querySelector('h2 i');
+            if (details.style.display === 'none' || !details.style.display) {
+                details.style.display = 'block';
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            } else {
+                details.style.display = 'none';
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            }
+        }
+
+        document.querySelectorAll('.cont-contact-section').forEach(section => {
+            section.querySelector('.cont-contact-details').style.display = 'none';
+        });
+
+        document.getElementById('cont-contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Your message has been sent!');
+            this.reset();
+        });
+    </script>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="buttons">
+                    <button>E-SERVICES</button>
+                    <button>QUICK-LINKS</button>
+                    <button>DOWNLOADS</button>
+                </div>
+                <div class="info">
+                    <p>Sherubtse College of Education</p>
+                    <p>Royal University of Bhutan</p>
+                    <p>Kanglung, Trashigang, Bhutan</p>
+                    <p>Tel No.: +975-4-535128</p>
+                    <p>info.sherubtse@rub.edu.bt</p>
+                    <p>ict.sherubtse@rub.edu.bt</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Sherubtse College of Education 2024. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script >
+        setInterval(changeBackgroundImage, 3000);
+        changeBackgroundImage();
+
+        function toggleMenu() {
+            const menu = document.getElementById('responsiveMenu');
+            if (menu.style.right === '0px') {
+                menu.style.right = '-300px';
+            } else {
+                menu.style.right = '0px';
+            }
+        }
+    </script>
+</body>
+</html>

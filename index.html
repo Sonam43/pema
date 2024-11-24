@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="mission.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="navbar" id="navbar">
+            <img alt="Logo of Sherubtse College" height="50" src="image/Sherubtse College.png" width="40" style="margin-left: 30px;"/>
+            <h3 style="color: white; margin-left: -10px; font-weight: bold;">Sherubtse College</h3>
+            <a href="#" style="margin-left: 80px;">Home</a>
+            <div class="dropdown">
+                <a href="#">About Us</a>
+                <div class="dropdown-content">
+                    <a href="timeline.html">Timeline</a>
+                    <a href="faculty.html">Faculty Profile</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Academic</a>
+                <div class="dropdown-content">
+                    <a href="admission.html">Admission</a>
+                    <div class="sub-dropdown">
+                        <a href="#">Programmes<i class="fas fa-caret-right"></i></a>
+                        <div class="sub-dropdown-content">
+                            <a href="DSDApro.html">Data Science And Data Analytics</a>
+                            <a href="EPSpro.html">Economics and Political Science</a>
+                            <a href="DCPM.html">Digital Communication and Project Management</a>
+                            <a href="lifescience.html">Life Science</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="research.html">Research</a>
+                <div class="dropdown-content">
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Student Services</a>
+                <div class="dropdown-content">
+                    <a href="https://sites.google.com/view/sherubtselibrary">Library</a>
+                    <a href="games_and_sports.html">Games and Sports</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Announcement</a>
+                <div class="dropdown-content">
+                    <a href="Events.html">News</a>
+                    <a href="Events.html">Events</a>
+                    <a href="vacancy_announcement.html">Vacancy &amp; Announcement</a>
+                </div>
+            </div>
+            <a href="contect.html">Contact</a>
+            <a class="search-icon" href="#"><i class="fas fa-search"></i></a>
+            <span class="menu-icon" onclick="toggleMenu()">☰</span>
+        </div>
+        <div class="responsive-menu" id="responsiveMenu">
+            <span class="close-icon" onclick="toggleMenu()">&times;</span>
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="#">About Us</a>
+                <div class="dropdown-content">
+                    <a href="timeline.html">Timeline</a>
+                    <a href="faculty.html">Faculty Profile</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Academic</a>
+                <div class="dropdown-content">
+                    <a href="admission.html">Admission</a>
+                    <div class="sub-dropdown">
+                        <a href="#">Programmes<i class="fas fa-caret-right"></i></a>
+                        <div class="sub-dropdown-content">
+                            <a href="DSDApro.html">Data Science And Data Analytics</a>
+                            <a href="EPSpro.html">Economics and Political Science</a>
+                            <a href="DCPM.html">Digital Communication and Project Management</a>
+                            <a href="lifescience.html">Life Science</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="research.html">Research</a>
+                <div class="dropdown-content">
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Student Services</a>
+                <div class="dropdown-content">
+                    <a href="https://sites.google.com/view/sherubtselibrary">Library</a>
+                    <a href="games_and_sports.html">Games and Sports</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Announcement</a>
+                <div class="dropdown-content">
+                    <a href="Events.html">News</a>
+                    <a href="Events.html">Events</a>
+                    <a href="vacancy_announcement.html">Vacancy &amp; Announcement</a>
+                </div>
+            </div>
+            <a href="contect.html">Contact</a>
+        </div>
+    </header>
+    <article>
+        <div class="flex flex-col items-start mt-10 ml-10 md:ml-20 lg:ml-32">
+            <div class="flex items-center">
+                <img alt="Sherubtse College logo" class="w-16 h-16 object-contain" height="60" src="image/Sherubtse College.png" width="60"/>
+                <h1 class="ml-4 text-2xl font-bold">Mission &amp; Vision</h1>
+            </div>
+            <div class="p-6 rounded-lg mt-6">
+                <div class="buttons flex justify-start mb-4">
+                    <div class="btn vision" onclick="toggleContent('vision')">Vision</div>
+                    <div class="btn mission ml-4" onclick="toggleContent('mission')">Mission</div>
+                </div>
+                <div class="content-container">
+                    <div class="content" id="vision-content">
+                        An internationally recognized institute in Liberal Arts and Sciences with an emphasis on GNH value based learning
+                    </div>
+                    <div class="content" id="mission-content" style="display: none;">
+                        To provide GNH inspired quality tertiary education in Liberal Arts and Sciences. To contribute to the development of knowledge-based society through knowledge creation, sharing and advocacy
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center mt-10">
+                <img style="margin-top: -35px;" alt="Sherubtse College logo" class="w-16 h-16 object-contain" height="60" src="image/Sherubtse College.png" width="60"/>
+                <h1 class="ml-4 text-2xl font-bold" style="margin-top: -29px;">Programmes</h1>
+            </div>
+            <p class="mt-4 text-left max-w-2xl" style="margin-bottom: 30px;">
+                Sherubtse offers a wide range of academic programs, catering to the educational needs and interests of a broad spectrum of students.</p>
+        </div>
+
+        <div class="course-container">
+            <div class="course">
+                <div class="course-content">
+                    <div class="course-title">BSc Data Science and Data Analytics</div>
+                    <div class="course-description">The Bachelors of Data Science and Data Analytics programme is designed to produce students with adaptive mindsets to handle job disruptions and also to take on various opportunities that are presented along the way. For that, the programme will emphasize producing highly skilled and knowledgeable graduates...</div>
+                    <a class="read-more" href="DSDApro.html">Read More</a>
+                </div>
+                <img alt="DSDA" height="300" src="image/dataSDA.webp" width="300" />
+            </div>
+
+            <div class="course">
+                <div class="course-content">
+                    <div class="course-title">Bachelors of Digital Communications &amp; Project Management</div>
+                    <div class="course-description">The purpose of the DCPM is to teach students how to acquire the hard skills of project management and the soft and technical skills of digital communication. In this program, students will have the opportunity to get deep hands-on experiences and develop skills in various learning activities designed to address the practical application of project management in the digital world...</div>
+                    <a class="read-more" href="DCPM.html"> Read More</a>
+                </div>
+                <img alt="dcpm" height="300" src="image/pm.jpg" width="300" />
+            </div>
+
+            <div class="course">
+                <div class="course-content">
+                    <div class="course-title">Bachelors of Economics &amp; Political Science</div>
+                    <div class="course-description">Bachelors of Economics and Political Science intends to introduce students to the concepts of economics and integrate them into the decision-making process using economic techniques and methodologies...</div>
+                    <a class="read-more" href="EPSpro.html">Read More</a>
+                </div>
+                <img alt="eps" height="300" src="image/eps.webp" width="300" />
+            </div>
+
+            <div class="course">
+                <div class="course-content">
+                    <div class="course-title">BSc Life Science</div>
+                    <div class="course-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem, totam rem aperiam, eaque ipsa quae ab illo inventore et quasi architecto beatae vitae dicta sunt explicabo...</div>
+                    <a class="read-more" href="lifescience.html">Read More</a>
+                </div>
+                <img alt="life science" height="300" src="image/life science.jpg" width="300" />
+            </div>
+        </div>
+        <div class="container">
+            <div class="video-container">
+                <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/DhKWviXPWWI" width="660"></iframe>
+            </div>
+        </div>
+        <div class="container">
+            <div class="video-container">
+                <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://youtube.com/embed/N-YHdSy2Lt8" width="560"></iframe>
+            </div>
+        </div>
+    </article>
+
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="buttons">
+                    <button>E-SERVICES</button>
+                    <button>QUICK-LINKS</button>
+                    <button>DOWNLOADS</button>
+                </div>
+                <div class="info">
+                    <p>Sherubtse College of Education</p>
+                    <p>Royal University of Bhutan</p>
+                    <p>Kanglung, Trashigang, Bhutan</p>
+                    <p>Tel No.: +975-4-535128</p>
+                    <p>info.sherubtse@rub.edu.bt</p>
+                    <p>ict.sherubtse@rub.edu.bt</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Sherubtse College of Education 2024. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script >
+        setInterval(changeBackgroundImage, 3000);
+        changeBackgroundImage();
+
+        function toggleMenu() {
+            const menu = document.getElementById('responsiveMenu');
+            if (menu.style.right === '0px') {
+                menu.style.right = '-300px';
+            } else {
+                menu.style.right = '0px';
+            }
+        }
+    </script>
+</body>
+</html>

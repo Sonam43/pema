@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Events.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header id="header" style="background-image: url('image/Enents.jpg');">
+        <div class="navbar" id="navbar">
+            <img alt="Logo of Sherubtse College" height="50" src="image/Sherubtse College.png" width="40" style="margin-left: 30px;"/>
+            <h3 style="color: white; margin-left: -10px; font-weight: bold;">Sherubtse College</h3>
+            <a href="index.html" style="margin-left: 80px;">Home</a>
+            <div class="dropdown">
+                <a href="#">About Us</a>
+                <div class="dropdown-content">
+                    <a href="timeline.html">Timeline</a>
+                    <a href="faculty.html">Faculty Profile</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Academic</a>
+                <div class="dropdown-content">
+                    <a href="admission.html">Admission</a>
+                    <div class="sub-dropdown">
+                        <a href="#">Programmes<i class="fas fa-caret-right"></i></a>
+                        <div class="sub-dropdown-content">
+                            <a href="DSDApro.html">Data Science And Data Analytics</a>
+                            <a href="EPSpro.html">Economics and Political Science</a>
+                            <a href="DCPM.html">Digital Communication and Project Management</a>
+                            <a href="lifescience.html">Life Science</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="research.html">Research</a>
+                <div class="dropdown-content">
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Student Services</a>
+                <div class="dropdown-content">
+                    <a href="https://sites.google.com/view/sherubtselibrary">Library</a>
+                    <a href="games_and_sports.html">Games and Sports</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Announcement</a>
+                <div class="dropdown-content">
+                    <a href="Events.html">News</a>
+                    <a href="Events.html">Events</a>
+                    <a href="vacancy_announcement.html">Vacancy &amp; Announcement</a>
+                </div>
+            </div>
+            <a href="contect.html">Contact</a>
+            <a class="search-icon" href="#"><i class="fas fa-search"></i></a>
+            <span class="menu-icon" onclick="toggleMenu()">☰</span>
+        </div>
+        <div class="responsive-menu" id="responsiveMenu">
+            <span class="close-icon" onclick="toggleMenu()">&times;</span>
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="#">About Us</a>
+                <div class="dropdown-content">
+                    <a href="timeline.html">Timeline</a>
+                    <a href="faculty.html">Faculty Profile</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Academic</a>
+                <div class="dropdown-content">
+                    <a href="admission.html">Admission</a>
+                    <div class="sub-dropdown">
+                        <a href="#">Programmes<i class="fas fa-caret-right"></i></a>
+                        <div class="sub-dropdown-content">
+                            <a href="DSDApro.html">Data Science And Data Analytics</a>
+                            <a href="EPSpro.html">Economics and Political Science</a>
+                            <a href="DCPM.html">Digital Communication and Project Management</a>
+                            <a href="lifescience.html">Life Science</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="research.html">Research</a>
+                <div class="dropdown-content">
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Student Services</a>
+                <div class="dropdown-content">
+                    <a href="https://sites.google.com/view/sherubtselibrary">Library</a>
+                    <a href="games_and_sports.html">Games and Sports</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Announcement</a>
+                <div class="dropdown-content">
+                    <a href="Events.html">News</a>
+                    <a href="Events.html">Events</a>
+                    <a href="vacancy_announcement.html">Vacancy &amp; Announcement</a>
+                </div>
+            </div>
+            <a href="contect.html">Contact</a>
+        </div>
+    </header>
+    <article>
+        <div class="econtainer">
+            <div class="eheader">
+                <img alt="Logo" height="80" src="image/Sherubtse College.png" width="80" style="object-fit: contain;"/>
+                <h1>Events</h1>
+            </div>
+            <div class="events-grid">
+                <div class="event-card">
+                    <img alt="69th Birth Anniversary of His Majesty the Fourth Druk Gyalpo" height="300" src="image/events 1.jpg" width="600"/>
+                    <div class="econtent">
+                        <h2>Sherubtse College Hosts Research Workshop and Guest Lecture on AI....</h2>
+                        <p>September 30, 2024</p>
+                        <a class="eread-more" href="event1.html">Read More</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img alt="13th Royal Wedding" height="300" src="image/events 2.jpg" width="600"/>
+                    <div class="econtent">
+                        <h2>Sherubtse celebrates 15th Coronation Anniversary</h2>
+                        <p>December 6, 2023</p>
+                        <a class="eread-more" href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img alt="College President and Team Explore Blockchain Innovations at Ripple’s #UBRIConnect in Zurich" height="300" src="image/events 3.jpg" width="600"/>
+                    <div class="econtent">
+                        <h2>Academic Talk</h2>
+                        <p> December 6, 2023</p>
+                        <a class="eread-more" href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img alt="Empowering Women in the Bhutanese Film Industry Through Training and Advocacy" height="300" src="image/events 4.jpg" width="600"/>
+                    <div class="econtent">
+                        <h2>Sherubtse celebrates 15th Coronation Anniversary</h2>
+                        <p>December 6, 2023</p>
+                        <a class="eread-more" href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </article>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="buttons">
+                    <button>E-SERVICES</button>
+                    <button>QUICK-LINKS</button>
+                    <button>DOWNLOADS</button>
+                </div>
+                <div class="info">
+                    <p>Sherubtse College of Education</p>
+                    <p>Royal University of Bhutan</p>
+                    <p>Kanglung, Trashigang, Bhutan</p>
+                    <p>Tel No.: +975-4-535128</p>
+                    <p>info.sherubtse@rub.edu.bt</p>
+                    <p>ict.sherubtse@rub.edu.bt</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Sherubtse College of Education 2024. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script >
+        setInterval(changeBackgroundImage, 3000);
+        changeBackgroundImage();
+
+        function toggleMenu() {
+            const menu = document.getElementById('responsiveMenu');
+            if (menu.style.right === '0px') {
+                menu.style.right = '-300px';
+            } else {
+                menu.style.right = '0px';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherubtse Timeline</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="timline.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header id="header" style="background-image: url('image/timeline.jpg');">
+        <div class="navbar" id="navbar">
+            <img alt="Logo of Sherubtse College" height="50" src="image/Sherubtse College.png" width="40" style="margin-left: 30px;"/>
+            <h3 style="color: white; margin-left: -10px; font-weight: bold;">Sherubtse College</h3>
+            <a href="index.html" style="margin-left: 80px;">Home</a>
+            <div class="dropdown">
+                <a href="#">About Us</a>
+                <div class="dropdown-content">
+                    <a href="timeline.html">Timeline</a>
+                    <a href="faculty.html">Faculty Profile</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Academic</a>
+                <div class="dropdown-content">
+                    <a href="admission.html">Admission</a>
+                    <div class="sub-dropdown">
+                        <a href="#">Programmes<i class="fas fa-caret-right"></i></a>
+                        <div class="sub-dropdown-content">
+                            <a href="DSDApro.html">Data Science And Data Analytics</a>
+                            <a href="EPSpro.html">Economics and Political Science</a>
+                            <a href="DCPM.html">Digital Communication and Project Management</a>
+                            <a href="lifescience.html">Life Science</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="research.html">Research</a>
+                <div class="dropdown-content">
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Student Services</a>
+                <div class="dropdown-content">
+                    <a href="https://sites.google.com/view/sherubtselibrary">Library</a>
+                    <a href="games_and_sports.html">Games and Sports</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Announcement</a>
+                <div class="dropdown-content">
+                    <a href="Events.html">News</a>
+                    <a href="Events.html">Events</a>
+                    <a href="vacancy_announcement.html">Vacancy &amp; Announcement</a>
+                </div>
+            </div>
+            <a href="contect.html">Contact</a>
+            <a class="search-icon" href="#"><i class="fas fa-search"></i></a>
+            <span class="menu-icon" onclick="toggleMenu()">☰</span>
+        </div>
+        <div class="responsive-menu" id="responsiveMenu">
+            <span class="close-icon" onclick="toggleMenu()">&times;</span>
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="#">About Us</a>
+                <div class="dropdown-content">
+                    <a href="timeline.html">Timeline</a>
+                    <a href="faculty.html">Faculty Profile</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Academic</a>
+                <div class="dropdown-content">
+                    <a href="admission.html">Admission</a>
+                    <div class="sub-dropdown">
+                        <a href="#">Programmes<i class="fas fa-caret-right"></i></a>
+                        <div class="sub-dropdown-content">
+                            <a href="DSDApro.html">Data Science And Data Analytics</a>
+                            <a href="EPSpro.html">Economics and Political Science</a>
+                            <a href="DCPM.html">Digital Communication and Project Management</a>
+                            <a href="lifescience.html">Life Science</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="research.html">Research</a>
+                <div class="dropdown-content">
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Student Services</a>
+                <div class="dropdown-content">
+                    <a href="https://sites.google.com/view/sherubtselibrary">Library</a>
+                    <a href="games_and_sports.html">Games and Sports</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Announcement</a>
+                <div class="dropdown-content">
+                    <a href="Events.html">News</a>
+                    <a href="Events.html">Events</a>
+                    <a href="vacancy_announcement.html">Vacancy &amp; Announcement</a>
+                </div>
+            </div>
+            <a href="contect.html">Contact</a>
+        </div>
+    </header>
+    <div class="tcontainer">
+        <h1>Sherubtse Timeline</h1>
+        <ul class="timeline">
+            <li class="timeline-item">
+                <div class="tdate">1968</div>
+                <div class="tcontent">
+                    <h2>Sherubtse is born</h2>
+                    <p>Sherubtse High School established, inaugurated by the Third King Jigme Dorji Wangchuck</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="tdate">1976</div>
+                <div class="tcontent">
+                    <h2>Junior college started</h2>
+                    <p>Junior College started with 23 students</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="tdate">1983</div>
+                <div class="tcontent">
+                    <h2>Undergraduate courses started</h2>
+                    <p>Bachelors Degree courses started with 8 students enrolled in B.A, B.Com., and BSc program</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="tdate">2004</div>
+                <div class="tcontent">
+                    <h2>Joined RUB</h2>
+                    <p>Sherubtse joins a host of other colleges to establish the Royal University of Bhutan</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="tdate">2006</div>
+                <div class="tcontent">
+                    <h2>Started Degree Programmes</h2>
+                    <p>Sherubtse College started offering degree programmes under the Royal University of Bhutan in Arts/ Science/ Commerce</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="tdate">2008</div>
+                <div class="tcontent">
+                    <h2>Introduced New Programmes</h2>
+                    <p>BSc in Math and Physics, BSc in Math and Chemistry and BSc in Physics and chemistry were introduced. The College established the Center for Population and Development Studies (CPDS).</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="tdate">2009</div>
+                <div class="tcontent">
+                    <h2>Introduced Double Subject Degree Programmes</h2>
+                    <p>Introduction of BA in Political Science and Sociology, BA in History and Dzongkha and BA in Dzongkha and English as double subject degree programmes.</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="tdate">2011</div>
+                <div class="tcontent">
+                    <h2>Established a New Research Centre</h2>
+                    <p>Established Centre for Climate Change and Spatial Information (CCCSI)</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="tdate">2014</div>
+                <div class="tcontent">
+                    <h2>Introduced Two New Research Centres</h2>
+                    <p>Established two more new Centers of Excellence: Centre for Archeology and Historical Research (CAHR) and Centre for Science and Environmental Research (CSER).</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="tdate">2017</div>
+                <div class="tcontent">
+                    <h2>Introduced New Programmes</h2>
+                    <p>BSc in Mathematics programme was introduced under the Department of Mathematics and Computer Science and BSc in Physics and BSc in Chemistry programmes were introduced under the Department of Physical Science. BA in Population and Development Studies programme was introduced in the Department of Social Science as a single subject degree programme</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="tdate">2019</div>
+                <div class="tcontent">
+                    <h2>Introduced Single Degree Programmes</h2>
+                    <p>BA in Economics, BA in English, BA in Media Studies, BA in History and BSc in Geography programme were introduced as single subject degree programmes.</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="tdate">2021</div>
+                <div class="tcontent">
+                    <h2>Introduced New Programmes</h2>
+                    <p>BSc in Data Science and BSc in Statistics programmes were introduced in the Department of Mathematical Sciences.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="buttons">
+                    <button>E-SERVICES</button>
+                    <button>QUICK-LINKS</button>
+                    <button>DOWNLOADS</button>
+                </div>
+                <div class="info">
+                    <p>Sherubtse College of Education</p>
+                    <p>Royal University of Bhutan</p>
+                    <p>Kanglung, Trashigang, Bhutan</p>
+                    <p>Tel No.: +975-4-535128</p>
+                    <p>info.sherubtse@rub.edu.bt</p>
+                    <p>ict.sherubtse@rub.edu.bt</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Sherubtse College of Education 2024. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script >
+        setInterval(changeBackgroundImage, 3000);
+        changeBackgroundImage();
+
+        function toggleMenu() {
+            const menu = document.getElementById('responsiveMenu');
+            if (menu.style.right === '0px') {
+                menu.style.right = '-300px';
+            } else {
+                menu.style.right = '0px';
+            }
+        }
+    </script>
+</body>
+</html>

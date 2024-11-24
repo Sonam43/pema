@@ -1,0 +1,113 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.tcontainer {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #333;
+}
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    list-style: none;
+}
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #3498db;
+    left: 50%;
+    margin-left: -1px;
+}
+.timeline-item {
+    margin-bottom: 20px;
+    position: relative;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+.timeline-item .tcontent {
+    padding: 20px;
+    background: #fff;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.timeline-item .tcontent h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+.timeline-item .tcontent p {
+    margin: 10px 0 0;
+    font-size: 1em;
+    color: #666;
+}
+.timeline-item .tdate {
+    position: absolute;
+    top: 20px;
+    width: 100px;
+    text-align: center;
+    background: #3498db;
+    color: #fff;
+    padding: 5px 0;
+    border-radius: 4px;
+    font-size: 1em;
+}
+.timeline-item:nth-child(odd) .tdate {
+    right: -60px;
+}
+.timeline-item:nth-child(even) .tdate {
+    left: -60px;
+}
+.timeline-item:nth-child(odd) .tcontent {
+    border-left: 6px solid #3498db;
+}
+.timeline-item:nth-child(even) .tcontent {
+    border-right: 6px solid #3498db;
+}
+@media (max-width: 768px) {
+    .timeline:before {
+        left: 8px;
+    }
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    .timeline-item:nth-child(odd), .timeline-item:nth-child(even) {
+        left: 0;
+    }
+    .timeline-item .tdate {
+        top: 0;
+        left: 0;
+        right: auto;
+        width: auto;
+        background: transparent;
+        color: #3498db;
+        font-size: 1em;
+        padding: 0;
+    }
+    .timeline-item .tcontent {
+        border-left: 6px solid #3498db;
+        border-right: none;
+        padding-left: 20px;
+    }
+}

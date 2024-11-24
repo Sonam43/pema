@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            color: #333;
+        }
+        .research-container {
+            max-width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .research-container h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        .research-container h3 {
+            color: #2c3e50;
+            margin-top: 30px;
+        }
+        .research-container p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .research-container ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .research-container ul li {
+            background: #e9f5fc;
+            margin: 5px 0;
+            padding: 10px 15px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .research-container ul li a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+        }
+        .research-container ul li:hover {
+            background: #3498db;
+            color: #fff;
+        }
+        .research-container ul li:hover a {
+            color: #fff;
+        }
+        .research-container a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .research-container a:hover {
+            text-decoration: underline;
+        }
+        .research-news-section {
+            margin-top: 40px;
+        }
+        .research-news-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .research-news-item img {
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .research-news-item h4 {
+            margin: 0;
+            color: #2c3e50;
+        }
+        .research-news-item p {
+            margin: 5px 0 0;
+            color: #555;
+        }

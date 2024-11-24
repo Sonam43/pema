@@ -1,0 +1,54 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.vacancy-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.vacancy-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.vacancy-header h1 {
+    font-size: 2.5em;
+    color: #1e3a8a; /* Blue color */
+    margin: 0;
+}
+.vacancy-announcement {
+    background-color: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.vacancy-announcement:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.vacancy-announcement h2 {
+    font-size: 1.5em;
+    margin: 0;
+    color: #1e3a8a; /* Blue color */
+    transition: color 0.2s;
+}
+.vacancy-announcement:hover h2 {
+    color: #2563eb; /* Lighter blue on hover */
+}
+.vacancy-announcement p {
+    margin: 10px 0;
+    color: #4b5563;
+}
+.vacancy-announcement .vacancy-date {
+    font-size: 0.9em;
+    color: #9ca3af;
+}
+.vacancy-announcement .vacancy-icon {
+    color: #1e3a8a;
+    margin-right: 10px;
+}        
